@@ -23,7 +23,12 @@ In this approach two losses are used: L1 loss, which makes it a regression task,
 For the model stracuture a GAN will be used in which we have a generator and a discriminator model which learn to solve a problem together. In our setting, the generator model takes a grayscale image (1-channel image) and produces a 2-channel image, a channel for *a and another for *b. The discriminator, takes these two produced channels and concatenates them with the input grayscale image and decides whether this new 3-channel image is fake or real. Of course the discriminator also needs to see some real images (3-channel images again in Lab color space) that are not produced by the generator and should learn that they are real.
 
 ![GAN S](https://i0.wp.com/neptune.ai/wp-content/uploads/Generative-adversarial-networks.jpg?resize=720%2C317&ssl=1)
+
+### The Training
+Let't see the model working!!
+### First Epoch 
 ![Trainig_1](Img-readme/Training_1.PNG)
+### Final Epoch
 ![Training_100](Img-readme/Training_100.PNG)
 
 ## Some Results!
@@ -37,5 +42,14 @@ For the model stracuture a GAN will be used in which we have a generator and a d
 2. Download the model from this link  `models/model_GAN_100epochs.pth` and save it in the same folder. ❗❗IMPORTANT❗❗
 3. To install all the things needed - pip install -r requirements.txt
 4. To run the app on http://localhost:8501 run streamlit run main.py
+
+## What's Next? 🛠⁉
+
+1. Dataset for Portraits.
+2. Review the loss functions, in order to improve the model.
+3. Expand the current Dataset?
+4. Place the app in Heroku.
+5. Make the result colorized image bigger and with High resolution. 
+
 
 
