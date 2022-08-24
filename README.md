@@ -1,5 +1,5 @@
 # Photo-Lab
-![Input](Img-readme/Example 1.jpg)
+![Input](Img-readme/Example_1.jpg)
 
 When we see old pictures somehow they feel distant to us. That's because a key element is missing: The color!!
 The task of colorizing Black and White Photos This task could seem like a lot of work but the whole process can be done with the power of AI and Neural Networks.
