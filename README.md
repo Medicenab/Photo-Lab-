@@ -9,7 +9,7 @@ Let's see how that works with the use of GAN's and U-Net.
 Most images are in the RGB Format, in which we get a rank-3 (height, width, color) array with the last axis containing the color data for our image. These data represent color in RGB color space and there are 3 numbers for each pixel indicating how much Red, Green, and Blue the pixel is. In Lab color space, we have again three numbers for each pixel but these numbers have different meanings. The first number (channel), L, encodes the Lightness of each pixel and when we visualize this channel (the second image in the row below) it appears as a black and white image. The *a and *b channels encode how much green-red and yellow-blue each pixel is, respectively.
 
 In order to train our model, the Lab format is the way to go, the L channel will be our grayscale image, and the *a and *b channels the data to predict. Instead of 3 values to predict using RGB format, which is a more difficult and unstable task due to the many more possible combinations of 3 numbers compared to two numbers
-![RGB vs LAB](https://www.researchgate.net/publication/342569484/figure/fig4/AS:941767792791568@1601546347779/RGB-channels-vs-Lab-channels-The-channels-for-both-color-spaces-represent-the-image.png)
+![RGB vs LAB](Img-readme/RGB-channels-vs-Lab-channels-The-channels-for-both-color-spaces-represent-the-image.png)
 ## The Dataset
 For this case we a battle already won, for the data neeed to train the model any regular image will do. Therefore this task becomes the easy part. For this, the model where train mostly with landscape and street pictures, so the predictions works mainly for historical pictures!
 
