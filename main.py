@@ -18,8 +18,13 @@ from torchvision.utils import make_grid
 from torch.utils.data import Dataset, DataLoader
 
 from model import make_dataloaders, visualize_res
+st.set_page_config(
+    page_title="Photo Lab",
+    page_icon="random",
+)
 
-st.title("Photo Lab")
+st.title("Photo Lab ✨📸")
+st.text('Bring old Pictures Back to Life!')
 uploaded_files = st.file_uploader("Upload a B&W picture", accept_multiple_files=True)
 upload_st_files_local(uploaded_files)
 

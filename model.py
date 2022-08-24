@@ -349,7 +349,7 @@ def visualize_res(modelo, data,files_lenght):
         fig, ax = plt.subplots()
         ax.axis('off')
         ax.imshow(fake_imgs[i])
-        ax.set_title(f'Resultado {i} ')
+        #ax.set_title(f'Resultado {i} ')
         plt.show()
         fig.savefig(f"images_color/colorization_{i}.png")
 
@@ -357,6 +357,6 @@ def visualize_res(modelo, data,files_lenght):
         fig, ax = plt.subplots()
         ax.axis('off')
         ax.imshow(real_imgs[i])
-        ax.set_title(f'Original {i} ')
+        #ax.set_title(f'Original {i} ')
         plt.show()
         fig.savefig(f"images_original/input_{i}.png")
