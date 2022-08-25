@@ -14,7 +14,9 @@ In order to train our model, the Lab format is the way to go, the L channel will
 ## The Dataset
 For this case we a battle already won, for the data neeed to train the model any regular image will do. Therefore this task becomes the easy part. For this, the model where train mostly with landscape and street pictures, so the predictions works mainly for historical pictures!
 
-*foto dataset*
+[Google Scraped Image Dataset](https://www.kaggle.com/datasets/duttadebadri/image-classification)
+
+![Dataset](Img-readme/Dataset.PNG)
 
 ## The Model 💻⚙
 
@@ -39,7 +41,7 @@ Let't see the model working!!
 
 
 1. Clone the repository with https://github.com/Medicenab/Photo-Lab.git
-2. Download the model from this link  `models/model_GAN_100epochs.pth` and save it in the same folder. ❗❗IMPORTANT❗❗
+2. Download the model from this link  `models/model.txt` and save it in the same folder. ❗❗IMPORTANT❗❗
 3. To install all the things needed - pip install -r requirements.txt
 4. To run the app on http://localhost:8501 run streamlit run main.py
 
